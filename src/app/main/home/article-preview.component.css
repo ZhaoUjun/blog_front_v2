@@ -1,0 +1,40 @@
+.wrapper{
+  padding: 40px 25px;
+}
+.addiction{
+  color: #999999;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 12px;
+}
+
+.addiction>div{
+  padding-right: 12px;
+}
+
+.article{
+  color: #333333;
+  font-size: 16px;
+  text-indent: 2em;
+  margin-top: 20px;
+  line-height: 1.67;
+}
+
+.btn{
+  cursor: pointer;
+  color: #1d45cc;
+
+}
+.tag{
+  padding: 1px 3px;
+  border-radius: 2px;
+  margin: 0 5px;
+  border: solid 1px rgba(190, 199, 214, 0.17);
+  cursor: pointer;
+}
+.tag:hover{
+  background-color: rgba(15,27,40,0.48);
+  color: white;
+}
+

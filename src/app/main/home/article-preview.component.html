@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <h2>{{data.title}}</h2>
+    <div class="addiction">
+        <div>{{data.createTime}}</div>
+        <div>
+          <span>阅读数</span>
+          <span>{{data.readCnt}}</span>
+        </div>
+        <div>
+          <span  class="tag" (click)="searchArticle({id:''})">所有</span>
+          <span *ngFor="let tag of data.tags.filter(filterNull)" class="tag" (click)="searchArticle(tag)">{{tag.name}}</span>
+        </div>
+    </div>
+    <div class="article" *ngIf="!showAll">
+        <span>{{data.content}}</span>
+        <span (click)="toggleShowAll(data.id)" class="btn">阅读全部</span>
+    </div>
+    <div class="article" *ngIf="showAll">
+      <article-detail [articleContent]="data.content"></article-detail>
+      <span (click)="toggleShowAll()" class="btn">收起</span>
+    </div>
+</div>
