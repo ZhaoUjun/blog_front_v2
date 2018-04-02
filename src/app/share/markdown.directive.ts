@@ -34,7 +34,6 @@ export class MarkdownDirective {
     this.el.nativeElement.innerHTML = marked(this.content);
   }
 
-
   ngOnChanges(){
     this.renderMdContent()
   }

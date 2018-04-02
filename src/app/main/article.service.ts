@@ -17,7 +17,7 @@ export class ArticleService {
   ) { }
 
   getArticles(tagId?:string|number,pageNo=1):Observable<any>{
-    const url=joinQueryString('/home?',{
+    const url=joinQueryString('/article?',{
       tagId,
       pageNo
     });
