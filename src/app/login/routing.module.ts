@@ -1,11 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { LoginService } from './login.service'
-
-
-
-import { LoginComponent} from './login/login.component'
+import { LoginService } from './login.service';
+import { LoginComponent} from './login/login.component';
 
 
 const mainRoutes: Routes = [
@@ -20,8 +16,6 @@ const mainRoutes: Routes = [
     RouterModule.forChild(mainRoutes)
   ],
   exports: [RouterModule],
-  providers:[
-    LoginService
-  ]
+  providers: [LoginService]
 })
 export class RoutingModule { }

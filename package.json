@@ -5,8 +5,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+<<<<<<< HEAD
     "build": "ng build",
     "build:prod": "ng build --prod",
+=======
+    "build": "ng build --prod",
+>>>>>>> 1b571ca8fd7aa199dc98226f029061efffb3ff26
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -23,12 +27,13 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "@ngrx/store": "^4.1.1",
     "core-js": "^2.4.1",
-    "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14",
     "highlight.js": "^9.12.0",
     "marked": "^0.3.9",
-    "@ngrx/store": "^4.1.1"
+    "node-sass": "^4.8.3",
+    "rxjs": "^5.5.2",
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/cli": "1.5.5",
