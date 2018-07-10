@@ -5,12 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-<<<<<<< HEAD
-    "build": "ng build",
     "build:prod": "ng build --prod",
-=======
     "build": "ng build --prod",
->>>>>>> 1b571ca8fd7aa199dc98226f029061efffb3ff26
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

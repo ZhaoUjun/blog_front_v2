@@ -20,7 +20,7 @@ export class LoginService {
   ) { }
 
   getCaptchaUrl():string{
-    return APP_CONFIG.BASE_API_URL+`/login/captcha.png?r=${Math.random()}`
+    return APP_CONFIG.BASE_API_URL+`/captcha?r=${Math.random()}`
   }
 
   handelSubmitLogin(loginForm:LoginForm):Observable<Object>{
