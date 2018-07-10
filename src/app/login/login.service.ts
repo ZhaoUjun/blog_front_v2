@@ -25,7 +25,7 @@ export class LoginService {
 
   handelSubmitLogin(loginForm:LoginForm):Observable<Object>{
      return this.http
-       .post<ResponseItem>('/login',loginForm)
+       .post<ResponseItem>('/admin/sign-in',loginForm)
   }
 
 }
