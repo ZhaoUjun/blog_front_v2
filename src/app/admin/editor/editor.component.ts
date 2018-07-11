@@ -35,13 +35,21 @@ export class EditorComponent implements OnInit {
 
   createForm() {
     this.articleForm = this.fb.group({
-      title: '2121', // <--- the FormControl called "name"
+      title: '', // <--- the FormControl called "name"
       content:'',
-      tagIds:''
+      tagIds:[]
     });
   }
 
   ngOnInit() {
+    this.articleSV.loadTags()
+      .subscribe(
+        res=>{
+          this.tagOptions=res.data
+        },
+        err=>{
+          console.log(err.message)
+        })
   }
 
   subscribeContentChange(){

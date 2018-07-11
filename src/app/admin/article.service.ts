@@ -1,12 +1,20 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-
 import {Article} from './type'
 import {Observable} from 'rxjs/Observable'
 
 interface ItemsResponse {
   code: string;
   data:Article[];
+  msg:string
+}
+interface Tag{
+  id:number,
+  name:string
+}
+class Response{
+  code: string;
+  data:any;
   msg:string
 }
 
@@ -31,7 +39,11 @@ export class ArticleService {
   }
 
   addArticle(data:Article){
-    return this.http.post('/admin/article',data)
+    return this.http.post('/article',data)
+  }
+
+  loadTags():Observable<any>{
+    return this.http.get('/article/tags')
   }
 
 

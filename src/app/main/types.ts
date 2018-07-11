@@ -11,6 +11,7 @@ export class Article{
   content:string;
   title:string;
   readCnt:number;
+  preview:string
 }
 
 export interface ArticleResponse {

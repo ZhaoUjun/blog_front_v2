@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="article" *ngIf="!showAll">
-        <span>{{data.content}}</span>
+      <article-detail [articleContent]="data.preview"></article-detail>
         <span (click)="toggleShowAll(data.id)" class="btn">阅读全部</span>
     </div>
     <div class="article" *ngIf="showAll">
