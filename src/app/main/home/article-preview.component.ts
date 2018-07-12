@@ -35,8 +35,8 @@ export class ArticlePreviewComponent implements OnInit {
 
   toggleShowAll(id:number):void{
     this.showAll=!this.showAll;
-    this.service.addViewTimes(id)
-      .subscribe(res=>res.data)
+    // this.service.addViewTimes(id)
+    //   .subscribe(res=>res.data)
   }
 
   searchArticle(tag){

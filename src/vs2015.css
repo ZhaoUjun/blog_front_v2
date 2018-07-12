@@ -21,7 +21,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
-  color: #333;
+  color: #5b61e6;
   font-weight: bold;
 }
 
@@ -96,4 +96,20 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 .hljs-strong {
   font-weight: bold;
+}
+.article-viewer{
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+.article-viewer pre{
+  background-color: #dddde2;
+  overflow-x: scroll;
+  padding: 15px;
+  margin: 25px 0;
+}
+
+.article-viewer h1,.article-viewer h2,.article-viewer h3{
+  line-height: 2.5;
+}
+.article-viewer p{
+  margin: 1em 0;
 }
